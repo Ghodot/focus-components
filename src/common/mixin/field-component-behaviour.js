@@ -1,10 +1,10 @@
 import assign from 'object-assign';
 import {isUndefined, isObject} from 'lodash/lang';
 /**
- * Identity function
- * @param  {object} d - data to treat.
- * @return {object}  - The same object.
- */
+* Identity function
+* @param  {object} d - data to treat.
+* @return {object}  - The same object.
+*/
 function identity(d) {
     return d;
 }
