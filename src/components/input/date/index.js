@@ -146,11 +146,11 @@ class InputDate extends Component {
         const shouldTriggerChange = isCorrect || (triggerOnChangeIfEmpty && (inputDate || '').trim() === ''); // Fire onChange event, only if date if correct, or empty, if the option is activated
         const newData = isCorrect ? dropDownDate.toISOString() : null; // if date is not correct, it is empty, so send null (or empty string ?)
       
-        if (isCorrect) {
-            this.setState({ dropDownDate, inputDate });
-        } else {
-            this.setState({ inputDate });
-        }
+            if (isCorrect) {
+                this.setState({ dropDownDate, inputDate });
+            } else {
+                this.setState({ inputDate });
+            }
         
         // When checkOnlyOnBlur is true skip all checks.
         if (checkOnlyOnBlur === true) {
@@ -268,7 +268,7 @@ class InputDate extends Component {
                             ref='picker'
                             minDate={minDate}
                             maxDate={maxDate}
-                        />
+                            />
                     </div>
                 }
             </div>
