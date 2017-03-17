@@ -3,7 +3,8 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import moment from 'moment';
 import DatePicker from 'react-date-picker';
-import { isArray, uniqueId } from 'lodash';
+import isArray from 'lodash/lang/isArray';
+import uniqueId from 'lodash/utility/uniqueId';
 import closest from 'closest';
 
 import Base from '../../../behaviours/component-base';
@@ -92,7 +93,6 @@ class InputDate extends Component {
 
     /**
      * Before component unmount.
-     * 
      */
     componentWillUnmount() {
         document.removeEventListener('click', this._onDocumentClick);
