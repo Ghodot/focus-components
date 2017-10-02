@@ -73,6 +73,7 @@
         "lodash": "3.10.1",
         "react-date-picker": "3.1.10",
         "react-lazyload": "2.2.7",
+        "react-rte": "0.15.0",
         "uuid": "3.1.0"
     },
     "devDependencies": {
